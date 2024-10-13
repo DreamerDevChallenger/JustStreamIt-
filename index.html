@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <header id="app-header">
+        <img src="./assets/image.png" alt="logo" />
+        <p>Vidéos à la demande</p>
+      </header>
+      <main id="app-main">
+        <section id="best-movie" class="app-section">
+          <h2>Meilleur Film</h2>
+        </section>
+      </main>
+      <div id="app-modal">
+        <div id="app-modal-wrapper">
+          <div id="app-modal-movie-info">
+            <div class="app-modal-top">
+              <div id="app-modal-header">
+                <h3 id="app-modal-title"></h3>
+                <button id="app-modal-btn-close">
+                  <div class="lign"></div>
+                  <div class="lign"></div>
+                </button>
+              </div>
+              <div class="metadata">
+                <div class="box-flex">
+                  <strong id="app-modal-year"></strong>
+                  <strong>-</strong>
+                  <strong class="genres" id="app-modal-genres"></strong>
+                </div>
+                <div class="box-flex">
+                  <strong id="app-modal-rating"></strong>
+                  <strong id="app-modal-duration"></strong>
+                  <strong id="app-modal-country"></strong>
+                </div>
+                <div class="box-flex">
+                  <strong>IMDB score: </strong>
+                  <strong id="app-modal-imdb"></strong>
+                </div>
+                <div class="app-modal-directors">
+                  <strong>Réalisé par: </strong>
+                  <p id="app-modal-directors"></p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-description">
+              <p id="modal-description"></p>
+            </div>
+            <div class="app-modal-cover-image modal-info-block">
+              <img alt="movie cover" id="app-modal-cover" src="" />
+            </div>
+            <div class="modal-info-block">
+              <strong>Avec: </strong>
+              <p id="app-modal-cast"></p>
+            </div>
+            <div class="box-flex">
+              <button id="app-modal-btn-close-bottom">Fermer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer></footer>
+    </div>
+  </body>
+  <script src="./main.js"></script>
+</html>
